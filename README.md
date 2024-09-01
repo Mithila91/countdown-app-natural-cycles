@@ -1,6 +1,8 @@
 # Countdown Web Application
 
-This is a countdown web application built using Angular and TypeScript. The app allows users to set an event title and end date, and it displays the time remaining in the format "Days, Hours(h), Minutes(m), Seconds(s)." The application is responsive, working well in both portrait and landscape orientations, and ensures that text dynamically resizes to fit the screen width. When Title is not given it will default to "Your Event"
+This is a countdown web application built using Angular and TypeScript. The app allows users to set an event title and end date, and it displays the time remaining in the format "Days, Hours(h), Minutes(m), Seconds(s)." The application is responsive, working well in both portrait and landscape orientations, and ensures that text dynamically resizes to fit the screen width. 
+- When Title is not given it will default to "Your Event",
+- When the Date is not set it wll default to Todays
 
 ## Features
 
@@ -15,6 +17,9 @@ This is a countdown web application built using Angular and TypeScript. The app 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/countdown-app.git
+   git clone https://github.com/Mithila91/countdown-app-natural-cycles
    cd countdown-app
    ```
+
+## URL to deployed app
+https://countdown-app-natural-cycles.vercel.app/
