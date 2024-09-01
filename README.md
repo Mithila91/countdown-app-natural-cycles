@@ -18,7 +18,7 @@ This is a countdown web application built using Angular and TypeScript. The app 
 
    ```bash
    git clone https://github.com/Mithila91/countdown-app-natural-cycles
-   cd countdown-app
+   cd countdown-app-natural-cycles
    ```
 
 ## URL to deployed app
