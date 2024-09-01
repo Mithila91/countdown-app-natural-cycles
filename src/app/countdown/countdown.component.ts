@@ -9,8 +9,8 @@ import { CommonModule } from '@angular/common'
   templateUrl: './countdown.component.html',
 })
 export class CountdownComponent implements OnInit {
-  title: string = 'Midsummer Eve'
-  targetDate: string = '2025-06-21'
+  title: string = ''
+  targetDate: string = ''
   timeLeft!: string
   countdownInterval!: ReturnType<typeof setInterval>
 
@@ -20,10 +20,14 @@ export class CountdownComponent implements OnInit {
 
     if (storedTitle) {
       this.title = storedTitle
+    } else {
+      this.title = 'Your Event'
     }
 
     if (storedDate) {
       this.targetDate = storedDate
+    } else {
+      this.targetDate = new Date().toISOString().split('T')[0]
     }
 
     this.startCountdown()

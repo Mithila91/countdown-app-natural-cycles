@@ -1,18 +1,20 @@
-# Countdown Timer
+# Countdown Web Application
 
-## Project Setup
+This is a countdown web application built using Angular and TypeScript. The app allows users to set an event title and end date, and it displays the time remaining in the format "Days, Hours(h), Minutes(m), Seconds(s)." The application is responsive, working well in both portrait and landscape orientations, and ensures that text dynamically resizes to fit the screen width. When Title is not given it will default to "Your Event"
 
-1. Clone the repository.
-2. Run `npm install` to install dependencies.
-3. Run `ng serve` to start the development server.
-4. Visit `http://localhost:4200` in your browser.
+## Features
 
-## Deployment
+- **Set and Update Event Title and Date**: Users can input and modify the event title and the end date, with the countdown automatically updating in real time.
+- **Dynamic Countdown**: The countdown starts from the current time and accurately calculates the time left until the specified end date.
+- **Responsive Design**: The app is designed to work in both portrait and landscape modes, with text resizing to fill the width of the screen.
+- **Persistence**: The event title and date are saved in `localStorage` to persist between page reloads.
+- **Accessibility**: ARIA labels have been added to improve accessibility for screen readers.
 
-You can deploy the project using Netlify, Firebase, or GitHub Pages.
+## Setup and Installation
 
-## Optional Improvements
+1. **Clone the repository:**
 
-- Add unit tests with Jasmine/Karma.
-- Implement a more sophisticated text resizing algorithm.
-- Optimize performance with debouncing or throttling.
+   ```bash
+   git clone https://github.com/yourusername/countdown-app.git
+   cd countdown-app
+   ```

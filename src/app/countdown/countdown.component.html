@@ -1,11 +1,18 @@
 <div
   class="flex flex-col items-center justify-center h-screen text-center p-4 md:p-8"
 >
-  <h1 class="text-custom-purple font-bold text-4xl md:text-6xl lg:text-8xl">
+  <h1
+    aria-label="Event Title"
+    class="text-custom-purple font-bold text-4xl md:text-6xl lg:text-8xl"
+  >
     {{ title }}
   </h1>
 
-  <p class="mt-4 text-black font-medium text-2xl md:text-4xl lg:text-6xl">
+  <p
+    aria-live="polite"
+    aria-atomic="true"
+    class="mt-4 text-black font-medium text-2xl md:text-4xl lg:text-6xl"
+  >
     {{ timeLeft }}
   </p>
   <div
@@ -14,6 +21,7 @@
     <div class="relative flex items-center pb-2">
       <input
         id="title"
+        aria-label="Title Input"
         [(ngModel)]="title"
         (ngModelChange)="updateCountdown()"
         type="text"
@@ -29,6 +37,7 @@
     <div class="relative flex items-center pb-2">
       <input
         id="date"
+        aria-label="Date Input"
         [(ngModel)]="targetDate"
         (ngModelChange)="updateCountdown()"
         type="date"
