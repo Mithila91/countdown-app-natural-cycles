@@ -1,0 +1,45 @@
+<div
+  class="flex flex-col items-center justify-center h-screen text-center p-4 md:p-8"
+>
+  <h1 class="text-custom-purple font-bold text-4xl md:text-6xl lg:text-8xl">
+    {{ title }}
+  </h1>
+
+  <p class="mt-4 text-black font-medium text-2xl md:text-4xl lg:text-6xl">
+    {{ timeLeft }}
+  </p>
+  <div
+    class="mt-8 flex flex-col space-y-4 w-full max-w-sm md:max-w-md lg:max-w-lg"
+  >
+    <div class="relative flex items-center pb-2">
+      <input
+        id="title"
+        [(ngModel)]="title"
+        (ngModelChange)="updateCountdown()"
+        type="text"
+        class="w-full p-3 border bg-custom-bg rounded-md focus:ring-2 focus:ring-indigo-500"
+      />
+      <label
+        for="title"
+        class="absolute left-3 -top-2 bg-custom-bg px-1 text-sm font-normal text-black"
+      >
+        Title
+      </label>
+    </div>
+    <div class="relative flex items-center pb-2">
+      <input
+        id="date"
+        [(ngModel)]="targetDate"
+        (ngModelChange)="updateCountdown()"
+        type="date"
+        class="w-full p-3 border bg-custom-bg rounded-md focus:ring-2 focus:ring-indigo-500"
+      />
+      <label
+        for="date"
+        class="absolute left-3 -top-2 bg-custom-bg px-1 text-sm font-normal text-black"
+      >
+        Date
+      </label>
+    </div>
+  </div>
+</div>
