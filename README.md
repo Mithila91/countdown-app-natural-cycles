@@ -1,6 +1,7 @@
 # Countdown Web Application
 
-This is a countdown web application built using Angular and TypeScript. The app allows users to set an event title and end date, and it displays the time remaining in the format "Days, Hours(h), Minutes(m), Seconds(s)." The application is responsive, working well in both portrait and landscape orientations, and ensures that text dynamically resizes to fit the screen width. 
+This is a countdown web application built using Angular and TypeScript. The app allows users to set an event title and end date, and it displays the time remaining in the format "Days, Hours(h), Minutes(m), Seconds(s)." The application is responsive, working well in both portrait and landscape orientations, and ensures that text dynamically resizes to fit the screen width.
+
 - When Title is not given it will default to "Your Event",
 - When the Date is not set it wll default to Todays
 
@@ -22,4 +23,5 @@ This is a countdown web application built using Angular and TypeScript. The app 
    ```
 
 ## URL to deployed app
+
 https://countdown-app-natural-cycles.vercel.app/
